@@ -51,17 +51,57 @@ img {
     font-weight: 400;
     font-style: normal;
     cursor: pointer;
+    text-decoration: none;
+    padding: .7rem 1rem;
+    max-width: 9rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    width: 50%;
 }
 
-.sedan, .SUV, .luxury {
-    min-height: 2px;
+
+.button_text-sedan {
+    color: var(--Bright-orange);
+    background-color: white;
+}
+.button_text-suv {
+    color: var(--Dark-cyan);
+    background-color: white;
+}
+
+.button_text-luxury {
+    color: var(--Very-dark-cyan);
+    background-color: white;
+}
+
+
+
+.button_text-sedan:hover {
+    color: white;
+    background-color: var(--Bright-orange);
+}
+.button_text-suv:hover {
+    color: white;
+    background-color: var(--Dark-cyan);
+}
+.button_text-luxury:hover {
+    color: white;
+    background-color: var(--Very-dark-cyan);
+}
+
+/* .sedan, .suv, .luxury {
+    padding: .9rem;
     max-width: 10rem;
     border-radius: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: auto;
-}
+} */
 
 .sedan {
     background-color: var(--Very-light-gray-background-headings-buttons);
@@ -75,12 +115,12 @@ img {
     border: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
 
-.SUV {
+.suv {
     background-color: var(--Very-light-gray-background-headings-buttons);
     color: var(--Dark-cyan);  
 }
 
-.SUV:hover {
+.suv:hover {
     background-color: var(--Dark-cyan);
     color: var(--Very-light-gray-background-headings-buttons);
     border: 2px solid var(--Very-light-gray-background-headings-buttons);
@@ -92,7 +132,7 @@ img {
 }
 
 .luxury:hover {
-    background-color: var(--Very-dark-cyan);
+    background-color: transparent;
     color: var(--Very-light-gray-background-headings-buttons);
     border: 2px solid var(--Very-light-gray-background-headings-buttons);
 }
